@@ -1,0 +1,62 @@
+﻿/*
+ * Creado por SharpDevelop.
+ * Usuario: Sandra Zuñiga
+ * Fecha: 24/05/2014
+ * Hora: 11:49 p. m.
+ * 
+ * Para cambiar esta plantilla use Herramientas | Opciones | Codificación | Editar Encabezados Estándar
+ */
+using System;
+
+namespace Practica_4
+{
+	class Program
+	{
+		public static void Main(string[] args)
+		{
+			
+			
+			Console.WriteLine("Lista de productos");
+			
+			
+			string[] pro = new string[2];
+			string[] cod = new string[2];
+			string[] des = new string[2];
+			
+			
+			
+			
+			
+			for (int i=0; i<3; i++)
+			{
+				    Console.WriteLine("Ingresa el producto ");
+				 	pro[i]=Console.ReadLine();
+				    
+					
+					Console.WriteLine("Ingresa el código ");
+					cod[i]=Console.ReadLine();
+					
+					Console.WriteLine("Ingresa la descripción ");
+					des[i]=Console.ReadLine();
+				
+			}
+			
+			Console.WriteLine(" \n \n \n Tus registros son: \n");
+			for (int i=0; i<3; i++)
+			{
+				Console.WriteLine("pruducto   "+pro[i]);
+				Console.WriteLine("codigo   "+cod[i]); 
+				Console.WriteLine("descrip   "+des[i]); 	
+				Console.WriteLine("\n \n"); 				
+			}
+			
+			
+			
+			
+			
+			
+			Console.Write("Press any key to continue . . . ");
+			Console.ReadKey(true);
+		}
+	}
+}
